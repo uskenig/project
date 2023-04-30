@@ -71,3 +71,51 @@ function highAndLow(numbers){
 
 let digit = 123456789;
 console.log(descendingOrder(digit));
+
+
+const myDog = {
+  // Only change code below this line
+"name": "Don",
+"legs": 11,
+"tails": 2,
+"friends": ["mary", "nick", "sara"]
+
+  // Only change code above this line
+};
+
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+const hatValue = testObj.hat;
+const shirtValue = testObj.shirt;
+
+// Setup
+const testObjTwo = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+// Only change code below this line
+const entreeValue = testObj["an entree"];   // Change this line
+const drinkValue = testObj["the drink"]; 
+
+
+
+function portion(a,i,n){
+  let newArr = [];
+  for (let k = i; k < a[n]; k++){
+    if (k == n) {
+      n = k
+    };
+    newArr.push(a[k]);
+    
+   
+    }
+   return newArr;
+  }
+
+  
+  console.log(portion([1,2,3,4],1,2));
