@@ -130,5 +130,4 @@ function portion(a,i,n){
     } 
     
     return count;
-    
   }
