@@ -59,3 +59,26 @@ function findUniq(arr) {
   
 let arqarr = [1, 1, 1, 2, 1, 1]
 console.log(findUniq(arqarr))
+
+
+function countSmileys(arr) {
+    let smyles = [":)",";)",":-)",";-)",";~)",":~)",":D",";D",":~D",";-D",":-D",";~D"];
+    let count = 0;
+    for (let i = 0; i < arr.length; i++){ 
+        for (let j = 0; j < smyles.length; j++){
+        if (arr[i] === smyles[j]){                     // validSmileys.includes(arr[i]
+            count++
+        }
+    }
+    
+  }
+  return count;
+}
+
+function countSmileysTwo(arr) {
+    return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
+  }
+
+console.log(countSmileys([':)', ';(', ';}', ':-D', ':i', ':<', ";)"]))
+
+console.log(countSmileysTwo([':)', ';(', ';}', ':-D', ':i']))
