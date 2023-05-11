@@ -36,3 +36,20 @@ let nonAlphabetRegex = /\W/; // Change this line
 let resultNew = quoteSam.match(nonAlphabetRegex).length;
 console.log(resultNew)
 console.log()
+
+
+const myArr = new Array(1, 2, 3)
+myArr.forEach(el => console.log(el * 2))
+const newArr = myArr.map(el => el * 2)
+console.log(myArr)
+console.log(newArr)
+
+const car = {
+    color: "green",
+    body: "SUV"
+}
+
+Object.values(car).forEach(value => {
+    console.log(value)
+})
+
