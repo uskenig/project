@@ -131,3 +131,33 @@ function portion(a,i,n){
     
     return count;
   }
+
+  console.log("CHECKING CURRENT TIME");
+  let date = new Date();
+  //console.log(date.toLocaleTimeString().substring(0,8));
+  console.log(date.toTimeString().substring(0,8));
+  console.log(date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+
+
+
+  let strNew = ""
+  let ee = ""
+  let str = "world"
+  function solution(str){
+      strNew = str.split("")
+      console.log(strNew)
+      
+  }
+  
+
+  solution(str)
+
+  function findAverage(array) {
+    const length = array.length
+    let sum = 0
+    if (length === 0) return 0
+    for (let i = 0; i < length; i++) {
+        sum += array[i]
+    }
+    return sum/length;
+}
