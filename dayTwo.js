@@ -161,3 +161,16 @@ function portion(a,i,n){
     }
     return sum/length;
 }
+
+
+let number = 20
+let sum = 0
+  let reminder = number % 10
+  number = number / 10
+  sum += reminder
+  console.log(sum)
+  
+  function getMiddle(s)
+  {
+    return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+  }
